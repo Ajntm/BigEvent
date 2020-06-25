@@ -49,3 +49,7 @@ html, body {
     display: flex;
     justify-content: flex-end;
 }
+
+.links>a {
+    font-size: 12px;
+}

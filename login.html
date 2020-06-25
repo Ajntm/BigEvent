@@ -20,11 +20,11 @@
         </div>
 
         <!-- 登录 -->
-        <form class="login_form layui-form" action="">
+        <form class="login_form layui-form" action="" id="login_form">
             <div class="layui-form-item">
                 <i class="layui-icon layui-icon-username"></i>
-                <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off"
-                    class="layui-input">
+                <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名"
+                    autocomplete="off" class="layui-input">
             </div>
             <div class="layui-form-item">
                 <i class="layui-icon layui-icon-password"></i>
@@ -41,11 +41,11 @@
         </form>
 
         <!-- 注册 -->
-        <form class="reg_form layui-form" action="">
+        <form class="reg_form layui-form" action="" id="reg_form">
             <div class="layui-form-item">
                 <i class="layui-icon layui-icon-username"></i>
-                <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off"
-                    class="layui-input">
+                <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名"
+                    autocomplete="off" class="layui-input">
             </div>
 
 
@@ -56,8 +56,8 @@
             </div>
             <div class="layui-form-item">
                 <i class="layui-icon layui-icon-password"></i>
-                <input type="password" name="repassword" required lay-verify="required|pwd|repwd" placeholder="再次确认密码" autocomplete="off"
-                    class="layui-input">
+                <input type="password" name="repassword" required lay-verify="required|pwd|repwd" placeholder="再次确认密码"
+                    autocomplete="off" class="layui-input">
             </div>
 
 
@@ -72,6 +72,7 @@
     </div>
 
     <script src="/assets/lib/jquery.js"></script>
+    <script src="./assets/js/ajaxPrefilter.js"></script>
     <script src="./assets/js/login.js"></script>
 </body>
 
