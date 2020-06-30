@@ -12,8 +12,12 @@ $(function () {
 
     // 从layui中获取form对象
     var form = layui.form;
+
+
     // ?????????????????????????????????
+    // 应该可以不导入这个，可以使用layer这个对象
     var layer = layui.layer;
+
     form.verify({
         pwd: [/^[\S]{6,12}$/, '密码必须6到12位，且不能出现空格'],
         repwd: function (value) {
@@ -26,6 +30,7 @@ $(function () {
         }
     })
 
+    // 注册
     $('#reg_form').on('submit', function (e) {
         e.preventDefault();
 
@@ -47,6 +52,7 @@ $(function () {
     })
 
 
+    // 登录
     $('#login_form').on('submit', function (e) {
         e.preventDefault();
 

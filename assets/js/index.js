@@ -12,6 +12,8 @@ $(function () {
     })
 })
 
+
+// 获取用户信息并渲染页面
 function getUserInfo() {
     $.ajax({
         url: '/my/userinfo',
@@ -54,10 +56,21 @@ function renderAvater(user) {
     if (user.user_pic) {
         $('.layui-nav-img').attr('src', user.user_pic).show();
         $('.txtAvatar').hide();
-        return
+        // return
+    } else {
+        var first = name[0].toUpperCase()
+        $('.txtAvatar').html(first).show();
+        $('.layui-nav-img').hide();
     }
-    var first = name[0].toUpperCase()
-    $('.txtAvatar').html(first).show();
-    $('.layui-nav-img').hide();
 
+}
+
+
+
+
+// 自己写
+// 发布文章以后导航栏切换到文章列表
+function changeList() {
+    $('#dasdasdasdads dd').removeClass('layui-this');
+    $('#dasdasdasdads dd:eq(1)').addClass('layui-this');
 }
